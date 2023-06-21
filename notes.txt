@@ -1,0 +1,40 @@
+Node : Entorno de Ejecucion de JS orientado a eventos asincronos. Nos permite desarrollar aplicaciones escalables y de tiempo real.
+> Escalable:  Su rendimiento se puede adaptar a medida que crece el uso de la aplicacion y recibe mas solicitudes.
+> Tiempo Real: Establece una conexion bidireccional y dinamica entre el servidor y el cliente. Analiza los eventos que ocurren y reacciona de forma inmediata.
+Node no es un lenguaje de programacion , no es un framework ni una libreria. Es un entorno de ejecucion.
+
+
+Entorno de Ejecucion : Donde se ejecuta la aplicacion.
+
+Evento sincrono : Bloquea la app . Tiene que terminar de ejecutarse para continuar.
+
+Evento asincron : Se ejecuta en paralelo y no bloquea la app.
+
+Arquitectura : Modelo cliente servidor. El cliente solicta recursos/acciones al servidor , quien respondera con la informacion correspondiente
+
+Protocolo :Reglas que permite que dos o mas entidades se comuniquen y se entiendan.
+> HTTP / HTTPS
+
+Base de Datos : Conjunto de datos estructurados sobre un mismo contexto que se pueden consultar.
+
+API : Interfaz entre programas (cliente-servidor) que nos va a permitir conectar la app en el navegador , con el servidor
+
+Modulo : Es una funcionalidad que esta organizada en uno o varios archivos JS que puede ser reutilizada. Mas facil de entender y mantener. No repetir codigo y reutilizar"
+
+Importar: Darle acceso a funciones y elementos definidos en otro Modulo
+
+exportar : export.module.nombre = ...  y luego   para importar usar require(path)
+
+modulos built-in : Modules que vienen incorporados con Node.(http,https , fs,os,path , ...)
+
+module process: Provee informacion del proceso de node que se esta ejecutando.
+
+process.argv = argumentos que se pasan en la linea de comandos ej   node app.js 6 7
+
+High order programming = Pasar funciones como objetos a otras funciones . (Pasar como argumento)
+
+setTimeout (Se ejectua desp de x tiempo)
+setImmediate (Se ejecuta inmediatamente desp del codigo sincronico)
+setInterval(se ejecuta cada x lapso de tiempo , indefinidamente)
+
+modulo fs : Contiene funcionalidades para trabajar el sistema de archivos
