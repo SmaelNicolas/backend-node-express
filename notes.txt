@@ -38,3 +38,66 @@ setImmediate (Se ejecuta inmediatamente desp del codigo sincronico)
 setInterval(se ejecuta cada x lapso de tiempo , indefinidamente)
 
 modulo fs : Contiene funcionalidades para trabajar el sistema de archivos
+
+throw detiene la ejecucion
+
+npm init : inicializa package
+
+JSON : JavaScript Object Notation , es un formato de texto basado en la notacion de objetos de JS. Los datos se representanc como clave-valor.
+
+--save-dev : instalar paquetes para desarrollo
+
+Evento asyncrono : No bloquea la ejecucion de la app.
+Evento sincrono : Bloquea la ejecucion de la app hasta que finalize la tarea.
+
+Emitters : Objetos que emiten eventos nombrados y llaman a funciones especificas cuando ocurren
+Emitters son instancias de la clase EventEmitter.
+
+Event Handler / Listener = funcion que maneja el evento.
+
+.on() : recibe el nombre y una callback  .on("nombreEvento",()=>{}) .  Se ejecuta cuando se llama al evento con ese nombre.
+
+Modelo cliente-servdor : se usa para acceder a intener y obtener recursos e informacion. El cliente realiza peticiones a un servidor que devuelve informacion solicitada.
+
+Protocolo : Reglas que permiten transmitir la informacion entre dispositivos de una red.
+
+HTTP: Hypertext Transfer Protocol
+
+Solicitudes HTTP : Method, path , version , Headers , Body.
+
+Body se envia en formato JSON , el body no se incluye en todos los metodos.
+
+HTTPS: Agrega una capa extra de seguridad.
+
+GET : Solicitar un recurso especifico
+POST: Crear un recurso especifico
+PUT : Modificar un recurso especifico
+DELETE : Eliminar un recurso especifico
+
+Hay mas , estos 4 son los mas usados ( C.R.U.D )
+
+Respuestas HTTP : Incluyen un CODIGO , ESTADO , VERSION , HEADERS , BODY.
+
+Codigos de respuesta : _ Informativoas ( 100-199)
+                       _ Satisfactorias (200-299)
+                       -Redirecciones (300-399)
+                       -Error de los clientes (400-499)
+                       -Error de los servidores (500-599)
+
+                       > Mas comunes : 200 , 400 ,404 , 500.
+
+Modulo http : Permite a Node.js transmitir informacion con el protocolo HTTP. Nos permite escribir un servidor que va a escuchar solicitudes.
+
+Puerto : Ubicacion virtual del SO en la cual se puede accder a una app o a un proceso especifico que se este ejecutando.
+
+
+
+
+
+
+
+
+
+
+
+
