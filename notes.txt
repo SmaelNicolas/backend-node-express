@@ -105,6 +105,20 @@ Los query vienen separados por  signo ? y se arman como clave-valor
 Routing: Manejar las solicitudes del cliente en base a ciertos criterios
 Criterios : Metodo de la solicitud (GET/POST/etc..) , PATH
 
+Nodemon : actualizar cambios
+
+Express:  Ayuda a desaroolar apps en Node. Routing, altor endimiento , mas rapido y codigo conciso.
+
+CRUD : Create, Read , Update, Delete
+         POST,GET,PUT,DELETE
+
+API : Application Programming Interface. Permite que un software ofrezca un servicio a otro software
+
+REST: Etilo de arquitectura de software para sistemas de hipermedia distribuidos como www
+
+RESTful API
+
+REST : REpresentational State Transfer
 
 
 
