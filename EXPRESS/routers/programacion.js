@@ -8,13 +8,13 @@ const routerProgramacion = express.Router();
 routerProgramacion.use(express.json());
 
 routerProgramacion.get("/", (req, res) => {
-	res.send(JSON.stringify(programacion));
+	res.json(programacion);
 });
 
 routerProgramacion.post("/", (req, res) => {
 	const reqBody = req.body;
 	programacion.push(reqBody);
-	res.send(programacion);
+	res.json(programacion);
 });
 
 routerProgramacion.put("/:id", (req, res) => {
@@ -24,9 +24,11 @@ routerProgramacion.put("/:id", (req, res) => {
 
 	if (index >= 0) {
 		programacion[index] = bodyUpdate;
+	} else {
+		res.status(204);
 	}
 
-	res.send(JSON.stringify(programacion));
+	res.json(programacion);
 });
 
 routerProgramacion.patch("/:id", (req, res) => {
@@ -37,9 +39,11 @@ routerProgramacion.patch("/:id", (req, res) => {
 	if (index >= 0) {
 		const courseToUpdate = programacion[index];
 		Object.assign(courseToUpdate, infoUpdate);
+	} else {
+		res.status(204);
 	}
 
-	res.send(JSON.stringify(programacion));
+	res.json(programacion);
 });
 
 routerProgramacion.delete("/:id", (req, res) => {
@@ -47,11 +51,12 @@ routerProgramacion.delete("/:id", (req, res) => {
 	const index = programacion.findIndex((curso) => curso.id === +id);
 
 	if (index >= 0) {
-		const courseToUpdate = programacion[index];
 		programacion.splice(index, 1);
+	} else {
+		res.status(204);
 	}
 
-	res.send(JSON.stringify(programacion));
+	res.json(programacion);
 });
 
 module.exports = routerProgramacion;
