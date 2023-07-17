@@ -3,20 +3,33 @@ const app = express();
 const { infoCursos } = require("./cursos");
 const PORT = process.env.PORT || 3001;
 
+//ROUTERS
+const routerCursos = express.Router();
+app.use("/api/cursos", routerCursos);
+
 //Routing
 app.get("/", (req, res) => {
 	res.send("SERVER EXPRESS . CURSOS");
 });
 
-app.get("/api/cursos", (req, res) => {
+routerCursos.get("/", (req, res) => {
 	res.send(JSON.stringify(infoCursos));
 });
-app.get("/api/cursos/programacion", (req, res) => {
+routerCursos.get("/programacion", (req, res) => {
 	res.send(JSON.stringify(infoCursos.programacion));
 });
-app.get("/api/cursos/matematicas", (req, res) => {
+routerCursos.get("/matematicas", (req, res) => {
 	res.send(JSON.stringify(infoCursos.matematicas));
 });
+// app.get("/api/cursos", (req, res) => {
+// 	res.send(JSON.stringify(infoCursos));
+// });
+// app.get("/api/cursos/programacion", (req, res) => {
+// 	res.send(JSON.stringify(infoCursos.programacion));
+// });
+// app.get("/api/cursos/matematicas", (req, res) => {
+// 	res.send(JSON.stringify(infoCursos.matematicas));
+// });
 
 //Routing Dinamico
 // app.get("/api/cursos/programacion/:languaje", (req, res) => {
