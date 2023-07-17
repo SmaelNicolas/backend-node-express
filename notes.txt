@@ -120,6 +120,7 @@ RESTful API
 
 REST : REpresentational State Transfer
 
+Middleware : se ejecutan despues de reicibir una solicitud y antes de enviar una respuesta. Tiene acceso al objeto de la solicitud , al objeto de la respuesta y a next(), una funcion para ejecutar el proximo middleware
 
 
 
