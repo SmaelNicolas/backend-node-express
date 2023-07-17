@@ -90,7 +90,20 @@ Modulo http : Permite a Node.js transmitir informacion con el protocolo HTTP. No
 
 Puerto : Ubicacion virtual del SO en la cual se puede accder a una app o a un proceso especifico que se este ejecutando.
 
+URL : (Uniform Resource Locator) Direccion de un recurso en la web
 
+Secciones de una url:
+protocolo http / https
+subidominio : www
+dominio : nombre
+dominio de nivel superior : .com .net .edu .gov etc
+path
+parametros de ruta : user/20
+parametros query  search?q=mySearch
+Los query vienen separados por  signo ? y se arman como clave-valor
+
+Routing: Manejar las solicitudes del cliente en base a ciertos criterios
+Criterios : Metodo de la solicitud (GET/POST/etc..) , PATH
 
 
 
