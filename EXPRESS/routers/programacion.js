@@ -42,4 +42,16 @@ routerProgramacion.patch("/:id", (req, res) => {
 	res.send(JSON.stringify(programacion));
 });
 
+routerProgramacion.delete("/:id", (req, res) => {
+	const id = req.params.id;
+	const index = programacion.findIndex((curso) => curso.id === +id);
+
+	if (index >= 0) {
+		const courseToUpdate = programacion[index];
+		programacion.splice(index, 1);
+	}
+
+	res.send(JSON.stringify(programacion));
+});
+
 module.exports = routerProgramacion;
